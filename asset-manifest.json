@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/School-catalog-final/static/css/main.94a6fe85.css",
+    "main.js": "/School-catalog-final/static/js/main.96bb197b.js",
+    "static/js/453.afedf5d3.chunk.js": "/School-catalog-final/static/js/453.afedf5d3.chunk.js",
+    "static/media/bootstrap-icons.woff?": "/School-catalog-final/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/School-catalog-final/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "static/media/itp.jpeg": "/School-catalog-final/static/media/itp.59a63d2ab61f49633f44.jpeg",
+    "static/media/Logo.png": "/School-catalog-final/static/media/Logo.1c258c9c8fdcb4934c32.png",
+    "static/media/student.svg": "/School-catalog-final/static/media/student.7d816bbb57f49f0cb5d5ad4b03cb068f.svg",
+    "static/media/cadre.svg": "/School-catalog-final/static/media/cadre.f00960a5f98d57706a915ec0023c7dc5.svg",
+    "static/media/master.svg": "/School-catalog-final/static/media/master.bbf8574536a827021ee8b4dcfa6c509e.svg",
+    "static/media/licenta.svg": "/School-catalog-final/static/media/licenta.1f3eff963d12c77533249f235e64c43f.svg",
+    "index.html": "/School-catalog-final/index.html",
+    "main.94a6fe85.css.map": "/School-catalog-final/static/css/main.94a6fe85.css.map",
+    "main.96bb197b.js.map": "/School-catalog-final/static/js/main.96bb197b.js.map",
+    "453.afedf5d3.chunk.js.map": "/School-catalog-final/static/js/453.afedf5d3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.94a6fe85.css",
+    "static/js/main.96bb197b.js"
+  ]
+}
