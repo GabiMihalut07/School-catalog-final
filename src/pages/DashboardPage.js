@@ -43,8 +43,8 @@ function DashboardPage() {
       setLoading(true);
       try {
         const [countResponse, studentResponse] = await Promise.all([
-          axios.get('http://localhost:442/api/count'),
-          axios.get('http://localhost:442/api/students'),
+          axios.get('http://38.242.231.170:442/api/count'),
+          axios.get('http://38.242.231.170:442/api/students'),
         ]);
         setCounts(countResponse.data);
         setStudents(studentResponse.data);
@@ -87,7 +87,7 @@ function DashboardPage() {
     setLoading(true);
     const updatedStatus = selectedStatus[id];
     try {
-      await axios.put(`http://localhost:442/api/students/${id}/status`, { status: updatedStatus });
+      await axios.put(`http://38.242.231.170:442/api/students/${id}/status`, { status: updatedStatus });
       setStudents((prevStudents) =>
         prevStudents.map((student) =>
           student._id === id ? { ...student, status: updatedStatus } : student
@@ -150,6 +150,7 @@ function DashboardPage() {
               />
             </>
           )}
+           <p>*studentii apar cu doua statusuri: "new" si "assigned". Numai studentilor cu statusul "assigned" li se pot adauga sau vizualiza note. Cei cu status "new" trebuie prima data acceptati (prin schimbarea statusului).</p>
         </div>
       </div>
     </div>

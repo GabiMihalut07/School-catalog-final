@@ -2,6 +2,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useNavbar } from '../context/NavbarContext';
+import { FaHome } from "react-icons/fa";
+import { GiTeamDowngrade } from "react-icons/gi";
+import { MdOutlineAddchart } from "react-icons/md";
+import { BiSolidLogOut } from "react-icons/bi";
 import './Navbar.css';
 
 function Navbar() {
@@ -29,22 +33,22 @@ function Navbar() {
           </li>
           <li className="nav-item nav-text">
             <Link className="nav-link text-white" to="/dashboard" onClick={handleLinkClick}>
-              Acasa
+              <FaHome /> Acasa
             </Link>
           </li>
           <li className="nav-item nav-text">
             <Link className="nav-link text-white" to="/grades" onClick={handleLinkClick}>
-              Adaugă note
+              <MdOutlineAddchart /> Adaugă note
             </Link>
           </li>
           <li className="nav-item nav-text">
             <Link className="nav-link text-white" to="/students-grades" onClick={handleLinkClick}>
-              Vizualizează note
+              <GiTeamDowngrade /> Vizualizează note
             </Link>
           </li>
           <li className="nav-item nav-text">
             <Link className="nav-link text-white" to="/logout" onClick={handleLinkClick}>
-              Logout
+              <BiSolidLogOut />  Logout
             </Link>
           </li>
         </ul>

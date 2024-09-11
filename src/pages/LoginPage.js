@@ -12,7 +12,7 @@ function LoginPage() {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post('http://localhost:442/api/auth/login', {
+      const response = await axios.post('http://38.242.231.170:442/api/auth/login', {
         email,
         password,
       });

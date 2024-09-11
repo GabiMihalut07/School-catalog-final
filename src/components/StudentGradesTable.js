@@ -36,7 +36,7 @@ const GradesTable = ({ grades, handleDeleteGrade }) => (
           </table>
         </div>
       ) : (
-        <p className="text-center">There are no grades for this student.</p>
+        <p className="text-center">Nu sunt note pentru studentul selectat</p>
       )}
     </div>
   </div>

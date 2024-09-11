@@ -1,19 +1,18 @@
-
-
-
 import React, { useState } from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import logo from '../assets/Logo.png';
 import './LoginPage.css'; 
+import { useNavigate } from 'react-router-dom';  
 
 function RegisterPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
   const handleRegister = async () => {
     try {
-      const response = await axios.post('http://localhost:442/api/auth/register', {
+      const response = await axios.post('http://38.242.231.170:442/api/auth/register', {
         email,
         password,
       });
@@ -27,6 +26,11 @@ function RegisterPage() {
       toast.error(error.response?.data?.message || 'An error occurred during registration.');
     }
   };
+
+  const handleNavigateToLogin = () => {
+    navigate('/login');
+  };
+
 
   return (
     <div className="root-login d-flex justify-content-center align-items-center vh-100">
@@ -62,9 +66,15 @@ function RegisterPage() {
               className="form-control"
             />
           </div>
-          <button onClick={handleRegister} className="btn btn-primary w-100">
+          <button onClick={handleRegister} className="btn btn-primary w-100 mb-3">
             Register
           </button>
+          <div className="text-center">
+            <p>or</p>
+            <button onClick={handleNavigateToLogin} className="btn btn-secondary w-100">
+              Login
+            </button>
+          </div>
         </div>
       </div>
     </div>

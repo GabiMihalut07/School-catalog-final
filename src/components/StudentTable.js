@@ -61,7 +61,7 @@ function StudentTable({
             </select>
           </div>
         </div>
-        <div className="table-responsive">
+        <div className="table-responsive" style={{ overflowX: 'auto' }}>
           <table className="table table-hover table-center mb-0 datatable table-striped shadow-sm">
             <thead className="thead-dark">
               <tr>
@@ -91,7 +91,7 @@ function StudentTable({
                     {showForm[student._id] && (
                       <tr role="row">
                         <td colSpan={4}>
-                          <div className="form-group">
+                          <div className="form-group mb-3">
                             <label htmlFor={`status-select-${student._id}`}>
                               Status:
                             </label>
@@ -108,7 +108,7 @@ function StudentTable({
                             </select>
                           </div>
                           <button
-                            className="btn btn-success"
+                            className="btn btn-success" 
                             onClick={() => handleSubmit(student._id)}
                           >
                             Save
@@ -128,6 +128,7 @@ function StudentTable({
             </tbody>
           </table>
         </div>
+
         <nav>
           <ul className="pagination justify-content-center flex-wrap">
             <li className={`page-item ${currentPage === 1 ? 'disabled' : ''}`}>
@@ -157,3 +158,4 @@ function StudentTable({
 }
 
 export default StudentTable;
+
